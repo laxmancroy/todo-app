@@ -1,5 +1,25 @@
+const navBar = [
+    { name: 'Home', href: '#home' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'Contact', href: '#contact' },
+]
+
 export function Header() {
     return (
-        <div>This is header</div>
+        <header className="flex justify-around">
+            {/* Logo */}
+            <div>Todo App</div>
+
+            {/* Desktop Navbar */}
+            <nav>
+                <ul className="flex">
+                    {
+                        navBar.map(link => (
+                            <li key={link.name}>{link.name}</li>
+                        ))
+                    }
+                </ul>
+            </nav>
+        </header>
     )
 }
