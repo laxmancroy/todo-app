@@ -6,7 +6,7 @@ const navBar = [
 
 export function Header() {
     return (
-        <header className="flex justify-around">
+        <header className="bg-gray-700 text-white py-3 flex justify-around">
             {/* Logo */}
             <div>Todo App</div>
 
